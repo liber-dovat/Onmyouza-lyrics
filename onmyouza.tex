@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt,oneside]{article}
+%\documentclass[a4paper,10pt,oneside,twocolumn]{article}
+
+%----------------------------------------------
+% Preambulo
+
+\usepackage{listings}
+
+\usepackage{tikz}
+
+\usepackage{CJKutf8}
+
+% para escribir los furiganas
+\usepackage[CJK, overlap]{ruby}
+\renewcommand{\rubysep}{-0.2ex}
+
+\usepackage[left=2cm,top=2cm,right=2cm,bottom=3cm]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = black,
+  citecolor  = black,
+  filecolor  = black,
+  urlcolor   = black
+}
+
+\usepackage{graphicx} % needed for including graphics e.g. EPS, PS
+
+%----------------------------------------------
+% Documento
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{min}%[dnp]{JIS}{min}
+
+\title{
+   \Huge{陰陽座}\\
+   \vspace{7mm}
+   \includegraphics[width=20mm]{onmyouza_logo}\\
+   \- 〜 \- Onmyouza \- 〜 \-
+}
+
+\date{}
+\maketitle
+
+\tableofcontents
+
+\include{kikoku_tensho}
+\include{hyakki_ryouran}
+\include{kojin_rasetsu}
+\include{fuuin_kairan}
+\include{houyoku_rindou}
+\include{mezame}
+\include{mugen_houyou}
+\include{garyo_tensei}
+\include{kokui_no_tennyou}
+\include{maou_taiten}
+\include{chimimouryou}
+\include{kongo_kyubi}
+\include{konpeki_no_soujin}
+\include{kishibojin}
+
+\end{CJK*}
+
+\end{document}
